@@ -1113,6 +1113,125 @@ Powered by RDEP
 
 </div>
           
+          {/* Join Big Bell Rewards Section */}
+<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
+
+  {profileUpdateSuccess ? (
+
+    <div className="text-center py-4 bg-green-50 rounded-xl border border-green-100">
+
+      <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+
+      <div className="text-sm font-semibold text-gray-900 mb-1">
+        Welcome to Big Bell Rewards!
+      </div>
+
+      <div className="text-xs text-green-700 font-medium">
+        Your profile has been saved. Bells will now be added to your account.
+      </div>
+
+    </div>
+
+  ) : (
+
+    <>
+      {/* Header */}
+      <div className="flex items-center justify-between mb-3">
+
+        <div className="flex items-center">
+
+          <div className="bg-[#702082] p-2 rounded-lg mr-3">
+            <User2 className="h-4 w-4 text-white" />
+          </div>
+
+          <div>
+            <div className="text-sm font-semibold text-gray-900">
+              Join Big Bell Rewards
+            </div>
+            <div className="text-xs text-gray-500">
+              Save your profile to earn Bells and unlock Taco Bell rewards
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* Form */}
+      <div className="space-y-3">
+
+        <div className="space-y-1">
+          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={profile.name}
+            onChange={(e) => setProfile((prev) => ({ ...prev, name: e.target.value }))}
+            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#702082]"
+          />
+        </div>
+
+
+        <div className="space-y-1">
+          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            placeholder="name@example.com"
+            value={profile.email}
+            onChange={(e) => setProfile((prev) => ({ ...prev, email: e.target.value }))}
+            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#702082]"
+          />
+        </div>
+
+
+        <div className="space-y-1">
+          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
+            Mobile Number
+          </label>
+
+          <input
+            type="tel"
+            placeholder="+91 ..."
+            value={profile.mobile}
+            onChange={(e) => setProfile((prev) => ({ ...prev, mobile: e.target.value }))}
+            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#702082]"
+          />
+        </div>
+
+      </div>
+
+
+      {/* CTA */}
+      <button
+        className="w-full mt-4 bg-[#702082] text-white h-11 text-xs font-semibold rounded-xl shadow-md transition active:scale-[0.98]"
+        onClick={handleProfileUpdate}
+      >
+        Save Profile & Start Earning Bells
+      </button>
+
+
+      {/* Helper text */}
+      <div className="text-[10px] text-gray-400 text-center mt-2">
+        By joining, you agree to receive Taco Bell offers and rewards updates.
+      </div>
+
+    </>
+  )}
+
+</div>
+
+          
     {/* Big Bell Rewards */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
 
@@ -1245,8 +1364,7 @@ Powered by RDEP
   </div>
 
 </div>
-          
-{/* Promo Banner Carousel */}
+          {/* Promo Banner Carousel */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden mx-3 mt-4 relative font-poppins">
 
   <Carousel
@@ -1261,20 +1379,19 @@ Powered by RDEP
 
       {/* Banner 1 */}
       <CarouselItem>
-        <div className="relative w-full">
+        <div className="relative w-full aspect-[16/9]">
 
           <a
             href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full"
+            className="absolute inset-0"
           >
             <Image
-              src="https://www.tacobell.co.in/pub/media/wysiwyg/1st-banner.jpeg"
+              src="/images/design-mode/taco-banner-1.jpeg"
               alt="Taco Bell Offer"
-              width={1200}
-              height={600}
-              className="w-full h-auto"
+              fill
+              className="object-contain"
               priority
             />
           </a>
@@ -1297,20 +1414,19 @@ Powered by RDEP
 
       {/* Banner 2 */}
       <CarouselItem>
-        <div className="relative w-full">
+        <div className="relative w-full aspect-[16/9]">
 
           <a
             href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full"
+            className="absolute inset-0"
           >
             <Image
-              src="https://www.tacobell.co.in/pub/media/wysiwyg/OG-double.jpg"
-              alt="Taco Bell Double Taco"
-              width={1200}
-              height={600}
-              className="w-full h-auto"
+              src="/images/design-mode/taco-banner-2.jpeg"
+              alt="Taco Bell Double Offer"
+              fill
+              className="object-contain"
             />
           </a>
 
@@ -1332,20 +1448,19 @@ Powered by RDEP
 
       {/* Banner 3 */}
       <CarouselItem>
-        <div className="relative w-full">
+        <div className="relative w-full aspect-[16/9]">
 
           <a
             href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full"
+            className="absolute inset-0"
           >
             <Image
-              src="https://www.tacobell.co.in/pub/media/gallery/meal-mania89.jpg"
+              src="/images/design-mode/taco-banner-3.jpeg"
               alt="Taco Bell Meal Mania"
-              width={1200}
-              height={600}
-              className="w-full h-auto"
+              fill
+              className="object-contain"
             />
           </a>
 
@@ -1369,7 +1484,6 @@ Powered by RDEP
 
     {/* Pagination Dots */}
     <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10">
-
       {[0, 1, 2].map((index) => (
         <button
           key={index}
@@ -1381,130 +1495,12 @@ Powered by RDEP
           }`}
         />
       ))}
-
     </div>
 
   </Carousel>
 
 </div>
           
-          {/* Join Domino's Rewards Section */}
-<div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
-
-  {profileUpdateSuccess ? (
-
-    <div className="text-center py-4 bg-green-50 rounded-xl border border-green-100">
-
-      <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path>
-        </svg>
-      </div>
-
-      <div className="text-sm font-semibold text-gray-900 mb-1">
-        Welcome to Domino's Rewards!
-      </div>
-
-      <div className="text-xs text-green-700 font-medium">
-        Your profile has been saved and rewards are now active.
-      </div>
-
-    </div>
-
-  ) : (
-
-    <>
-      {/* Header */}
-      <div className="flex items-center justify-between mb-3">
-
-        <div className="flex items-center">
-
-          <div className="bg-[#E31837] p-2 rounded-lg mr-3">
-            <User2 className="h-4 w-4 text-white" />
-          </div>
-
-          <div>
-            <div className="text-sm font-semibold text-gray-900">
-              Join Domino's Rewards
-            </div>
-            <div className="text-xs text-gray-500">
-              Save your profile to unlock offers and faster checkout
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* Form */}
-      <div className="space-y-3">
-
-        <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-            Full Name
-          </label>
-
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={profile.name}
-            onChange={(e) => setProfile((prev) => ({ ...prev, name: e.target.value }))}
-            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#E31837]"
-          />
-        </div>
-
-
-        <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-            Email Address
-          </label>
-
-          <input
-            type="email"
-            placeholder="name@example.com"
-            value={profile.email}
-            onChange={(e) => setProfile((prev) => ({ ...prev, email: e.target.value }))}
-            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#E31837]"
-          />
-        </div>
-
-
-        <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-            Mobile Number
-          </label>
-
-          <input
-            type="tel"
-            placeholder="+91 ..."
-            value={profile.mobile}
-            onChange={(e) => setProfile((prev) => ({ ...prev, mobile: e.target.value }))}
-            className="w-full h-10 px-3 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#E31837]"
-          />
-        </div>
-
-      </div>
-
-
-      {/* CTA */}
-      <button
-        className="w-full mt-4 bg-[#006491] text-white h-11 text-xs font-semibold rounded-xl shadow-md transition active:scale-[0.98]"
-        onClick={handleProfileUpdate}
-      >
-        Save Profile & Activate Rewards
-      </button>
-
-
-      {/* Helper text */}
-      <div className="text-[10px] text-gray-400 text-center mt-2">
-        By joining, you agree to receive Domino's offers and order updates.
-      </div>
-
-    </>
-  )}
-
-</div>
           
       {/* Feedback Section */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
