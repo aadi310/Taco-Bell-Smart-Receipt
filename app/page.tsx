@@ -196,65 +196,66 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
     })
   }, [promoApi])
 
- const receipts = {
+const receipts = {
   current: {
-    id: "DMBLR7891XQ12",
+    id: "TBBLR7891XQ12",
     date: "05-03-2026",
     time: "19:22:18",
     associate: "Rahul Kumar",
-    branch: "Brigade Road",
+    branch: "SJR Koramangala",
     items: [
       {
         id: 0,
-        name: "Farmhouse Pizza",
-        size: "Medium",
+        name: "Crispy Potato Taco",
+        size: "Regular",
         description:
-          "Loaded with capsicum, onion, tomato, grilled mushroom & mozzarella cheese",
-        price: 399,
-        quantity: 1,
-        category: "Veg Pizza",
+          "Crispy potato bites with lettuce, chipotle sauce and soft taco shell",
+        price: 99,
+        quantity: 2,
+        category: "Tacos",
         taxApplicable: true,
-        baseAmount: 380,
-        tax: 19,
-        itemCode: "P101",
+        baseAmount: 188,
+        tax: 10,
+        itemCode: "TB101",
         type: "Veg",
       },
       {
         id: 1,
-        name: "Garlic Breadsticks",
+        name: "Crispy Chicken Wrap",
         size: "Regular",
         description:
-          "Freshly baked breadsticks with garlic seasoning and cheese dip",
-        price: 149,
+          "Crispy chicken with lettuce, jalapeno sauce and soft tortilla wrap",
+        price: 179,
         quantity: 1,
-        category: "Sides",
+        category: "Wraps",
         taxApplicable: true,
-        baseAmount: 142,
-        tax: 7,
-        itemCode: "S210",
+        baseAmount: 170,
+        tax: 9,
+        itemCode: "TB210",
+        type: "Chicken",
       },
       {
         id: 2,
-        name: "Choco Lava Cake",
-        size: "Single",
+        name: "Nachos with Cheese",
+        size: "Regular",
         description:
-          "Warm chocolate cake with molten chocolate filling inside",
-        price: 109,
+          "Crunchy tortilla nachos served with warm cheesy dip",
+        price: 119,
         quantity: 1,
-        category: "Desserts",
+        category: "Sides",
         taxApplicable: true,
-        baseAmount: 104,
-        tax: 5,
-        itemCode: "D330",
+        baseAmount: 113,
+        tax: 6,
+        itemCode: "TB330",
       },
     ],
-    subtotal: 626,
-    tax: 31,
-    total: 657,
+    subtotal: 471,
+    tax: 25,
+    total: 496,
   },
 
   hist1: {
-    id: "DMBLR6719YT92",
+    id: "TBBLR6719YT92",
     date: "20-01-2026",
     time: "14:22:18",
     associate: "Anita Sharma",
@@ -262,32 +263,33 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
     items: [
       {
         id: 0,
-        name: "Chicken Dominator",
-        size: "Medium",
+        name: "Naked Chicken Taco",
+        size: "Regular",
         description:
-          "Loaded with double pepper barbecue chicken, peri-peri chicken & grilled chicken rashers",
-        price: 549,
+          "Crispy chicken shell taco filled with lettuce, cheese and chipotle sauce",
+        price: 189,
         quantity: 1,
-        category: "Non-Veg Pizza",
+        category: "Tacos",
         taxApplicable: true,
-        baseAmount: 523,
-        tax: 26,
-        itemCode: "P210",
+        baseAmount: 180,
+        tax: 9,
+        itemCode: "TB401",
         type: "Chicken",
       },
       {
         id: 1,
-        name: "Stuffed Garlic Bread",
-        size: "Regular",
+        name: "Big Bell Box (Veg)",
+        size: "Combo",
         description:
-          "Freshly baked bread stuffed with mozzarella cheese and jalapenos",
-        price: 169,
+          "Veg taco, rice bowl, nachos and beverage combo meal",
+        price: 399,
         quantity: 1,
-        category: "Sides",
+        category: "Combos",
         taxApplicable: true,
-        baseAmount: 161,
-        tax: 8,
-        itemCode: "S230",
+        baseAmount: 380,
+        tax: 19,
+        itemCode: "TB520",
+        type: "Veg",
       },
       {
         id: 2,
@@ -300,69 +302,69 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
         taxApplicable: true,
         baseAmount: 57,
         tax: 3,
-        itemCode: "B310",
+        itemCode: "TB610",
       },
     ],
-    subtotal: 741,
-    tax: 37,
-    total: 778,
+    subtotal: 617,
+    tax: 31,
+    total: 648,
   },
 
   hist2: {
-    id: "DMBLR5590LP33",
+    id: "TBBLR5590LP33",
     date: "15-12-2025",
     time: "12:45:33",
     associate: "Sanjay Reddy",
-    branch: "Koramangala",
+    branch: "Brigade Road",
     items: [
       {
         id: 0,
-        name: "Veg Extravaganza",
-        size: "Medium",
+        name: "Veg Rice Bowl",
+        size: "Regular",
         description:
-          "Black olives, capsicum, onion, grilled mushroom, corn, tomato & jalapeno",
-        price: 429,
+          "Mexican rice bowl with beans, salsa, lettuce and creamy sauce",
+        price: 199,
         quantity: 1,
-        category: "Veg Pizza",
+        category: "Bowls",
         taxApplicable: true,
-        baseAmount: 409,
-        tax: 20,
-        itemCode: "P140",
+        baseAmount: 190,
+        tax: 9,
+        itemCode: "TB720",
         type: "Veg",
       },
       {
         id: 1,
-        name: "Taco Mexicana",
+        name: "Crispy Chicken Taco",
         size: "Regular",
         description:
-          "Mexican herbs with jalapenos, onions, tomatoes and taco seasoning",
-        price: 279,
-        quantity: 1,
-        category: "Veg Pizza",
+          "Crunchy taco with crispy chicken, lettuce and creamy jalapeno sauce",
+        price: 119,
+        quantity: 2,
+        category: "Tacos",
         taxApplicable: true,
-        baseAmount: 266,
-        tax: 13,
-        itemCode: "P150",
-        type: "Veg",
+        baseAmount: 226,
+        tax: 12,
+        itemCode: "TB830",
+        type: "Chicken",
       },
       {
         id: 2,
-        name: "Butterscotch Mousse Cake",
+        name: "Choco Quesadilla Dessert",
         size: "Single",
         description:
-          "Soft butterscotch flavored mousse dessert with caramel topping",
-        price: 119,
+          "Warm tortilla filled with melted chocolate dessert filling",
+        price: 129,
         quantity: 1,
         category: "Desserts",
         taxApplicable: true,
-        baseAmount: 113,
+        baseAmount: 123,
         tax: 6,
-        itemCode: "D310",
+        itemCode: "TB910",
       },
     ],
-    subtotal: 788,
-    tax: 39,
-    total: 827,
+    subtotal: 539,
+    tax: 27,
+    total: 566,
   },
 };
   
@@ -375,10 +377,10 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
       id: "current",
       date: "05-03-2026",
       branch: "Domino's",
-      amount: currentReceiptId === "current" ? receipts.current.subtotal + receipts.current.tax : 657.00,
+      amount: currentReceiptId === "current" ? receipts.current.subtotal + receipts.current.tax : 496.00,
     },
-    { id: "hist1", date: "20-01-2026", branch: "Domino's", amount: 778.00 },
-    { id: "hist2", date: "15-12-2025", branch: "Domino's", amount: 827.00 },
+    { id: "hist1", date: "20-01-2026", branch: "Domino's", amount: 648.00 },
+    { id: "hist2", date: "15-12-2025", branch: "Domino's", amount: 566.00 },
   ]
 
   const toggleProductExpansion = (productId: number) => {
@@ -462,7 +464,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
   }
 
   const handleEmailReceipt = () => {
-    window.open(`mailto:?subject=Receipt from Domino's Bangalore&body=Receipt ID: ${currentReceipt.id}`)
+    window.open(`mailto:?subject=Receipt from Taco Bell Bangalore&body=Receipt ID: ${currentReceipt.id}`)
   }
 
   const handleDownloadReceipt = () => {
@@ -471,7 +473,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Domino's Digital Receipt</title>
+<title>Taco Bell Digital Receipt</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -501,12 +503,12 @@ justify-content:space-between;
 align-items:flex-start;
 margin-bottom:28px;
 padding-bottom:16px;
-border-bottom:3px solid #006491;
+border-bottom:3px solid #702082;
 }
 
 .company-info h1{
 font-size:30px;
-color:#006491;
+color:#702082;
 font-weight:700;
 margin-bottom:4px;
 }
@@ -528,22 +530,22 @@ margin-bottom:4px;
 
 .bill-id{
 font-weight:600;
-color:#E31837;
+color:#702082;
 }
 
 /* Guest section */
 
 .customer-section{
-background:#F4F8FB;
+background:#F7F2FA;
 padding:14px;
-border-left:4px solid #006491;
+border-left:4px solid #702082;
 border-radius:0 8px 8px 0;
 margin-bottom:22px;
 }
 
 .customer-section h3{
 font-size:15px;
-color:#006491;
+color:#702082;
 font-weight:600;
 margin-bottom:2px;
 }
@@ -562,7 +564,7 @@ margin-bottom:24px;
 }
 
 .items-table th{
-background:#006491;
+background:#702082;
 color:white;
 padding:10px 8px;
 text-align:left;
@@ -590,7 +592,7 @@ color:#666;
 
 .item-specs{
 font-size:10px;
-color:#E31837;
+color:#702082;
 margin-top:4px;
 font-weight:600;
 }
@@ -620,8 +622,8 @@ font-size:13px;
 .net-total{
 font-size:18px;
 font-weight:700;
-color:#006491;
-border-top:2px solid #006491;
+color:#702082;
+border-top:2px solid #702082;
 padding-top:6px;
 margin-top:6px;
 }
@@ -638,7 +640,7 @@ color:#555;
 }
 
 .footer strong{
-color:#E31837;
+color:#702082;
 }
 
 .powered{
@@ -664,17 +666,18 @@ padding:0;
 <div class="receipt-header">
 
 <div class="company-info">
-<h1>Domino's</h1>
+<h1>Taco Bell</h1>
 <p>
-<strong>Domino's Pizza India</strong><br>
-Brigade Road<br>
-Bengaluru, Karnataka 560001<br>
-Phone: 1800-208-1234
+<strong>Taco Bell India</strong><br>
+SJR Koramangala<br>
+Sony World Junction Plot 36<br>
+100 Feet Rd, Koramangala<br>
+Bengaluru, Karnataka 560095
 </p>
 </div>
 
 <div class="bill-info">
-<div><strong>Order ID:</strong> <span class="bill-id">DMBLR7891XQ12</span></div>
+<div><strong>Order ID:</strong> <span class="bill-id">TBBLR7891XQ12</span></div>
 <div><strong>Date:</strong> 05-03-2026 19:22</div>
 <div><strong>Store Associate:</strong> Rahul Kumar</div>
 </div>
@@ -683,7 +686,7 @@ Phone: 1800-208-1234
 
 <div class="customer-section">
 <h3>Customer: ${customerName}</h3>
-<p>Thank you for ordering with Domino's!</p>
+<p>Thanks for enjoying Taco Bell with us!</p>
 </div>
 
 <table class="items-table">
@@ -702,38 +705,38 @@ Phone: 1800-208-1234
 
 <tr>
 <td>
-<div class="item-name">Farmhouse Pizza</div>
-<div class="item-desc">Capsicum, onion, tomato, grilled mushroom & mozzarella cheese</div>
-<div class="item-specs">Type: Veg Pizza</div>
+<div class="item-name">Crispy Potato Taco</div>
+<div class="item-desc">Crispy potato bites with lettuce & chipotle sauce in a soft taco</div>
+<div class="item-specs">Type: Veg Taco</div>
 </td>
-<td>1</td>
-<td>Medium</td>
-<td>₹399</td>
-<td><strong>₹399</strong></td>
+<td>2</td>
+<td>Regular</td>
+<td>₹99</td>
+<td><strong>₹198</strong></td>
 </tr>
 
 <tr>
 <td>
-<div class="item-name">Garlic Breadsticks</div>
-<div class="item-desc">Freshly baked breadsticks with garlic seasoning & cheese dip</div>
+<div class="item-name">Crispy Chicken Wrap</div>
+<div class="item-desc">Crispy chicken with lettuce and jalapeno sauce in a tortilla wrap</div>
+<div class="item-specs">Wrap</div>
+</td>
+<td>1</td>
+<td>Regular</td>
+<td>₹179</td>
+<td><strong>₹179</strong></td>
+</tr>
+
+<tr>
+<td>
+<div class="item-name">Nachos with Cheese</div>
+<div class="item-desc">Crunchy tortilla nachos served with warm cheesy dip</div>
 <div class="item-specs">Side</div>
 </td>
 <td>1</td>
 <td>Regular</td>
-<td>₹149</td>
-<td><strong>₹149</strong></td>
-</tr>
-
-<tr>
-<td>
-<div class="item-name">Choco Lava Cake</div>
-<div class="item-desc">Warm chocolate cake with molten chocolate filling</div>
-<div class="item-specs">Dessert</div>
-</td>
-<td>1</td>
-<td>Single</td>
-<td>₹109</td>
-<td><strong>₹109</strong></td>
+<td>₹119</td>
+<td><strong>₹119</strong></td>
 </tr>
 
 </tbody>
@@ -746,17 +749,17 @@ Items Ordered: 3
 </div>
 
 <div class="totals-table">
-<div>Subtotal: <strong>₹626</strong></div>
-<div>GST (5%): <strong>₹31</strong></div>
-<div class="net-total">Total: <strong>₹657</strong></div>
+<div>Subtotal: <strong>₹471</strong></div>
+<div>GST (5%): <strong>₹25</strong></div>
+<div class="net-total">Total: <strong>₹496</strong></div>
 </div>
 
 </div>
 
 <div class="footer">
 
-<p><strong>Thanks for choosing Domino's!</strong></p>
-<p>Order again at www.dominos.co.in</p>
+<p><strong>Gracias! See you again at Taco Bell.</strong></p>
+<p>Order again at www.tacobell.co.in</p>
 
 <div class="powered">
 Powered by RDEP
@@ -772,7 +775,7 @@ Powered by RDEP
     const url = URL.createObjectURL(blob)
     const link = document.createElement("a")
     link.href = url
-    link.download = "Dominos_Receipt_SK251107001.html"
+    link.download = "Taco_Bell_Receipt_SK251107001.html"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -1686,7 +1689,7 @@ Powered by RDEP
 
     <div className="flex items-center">
 
-      <div className="bg-[#E31837] p-2 rounded-lg mr-3">
+      <div className="bg-[#702082] p-2 rounded-lg mr-3">
         <Sparkles className="h-4 w-4 text-white" />
       </div>
 
@@ -1711,23 +1714,23 @@ Powered by RDEP
 
     {/* Coupon 1 */}
     <button
-      onClick={() => copyCoupon("GET30")}
-      className="w-full bg-[#F4F8FB] border border-[#DDEAF2] rounded-xl p-3 text-left active:scale-[0.99]"
+      onClick={() => copyCoupon("VALUE99")}
+      className="w-full bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl p-3 text-left active:scale-[0.99]"
     >
 
       <div className="flex items-center justify-between">
 
         <div>
           <h4 className="text-sm font-semibold text-gray-900">
-            ₹30 Off Your Next Pizza
+            Everyday Best Value Deals
           </h4>
 
           <p className="text-[11px] text-gray-500">
-            Use code <span className="font-bold text-[#E31837]">GET30</span>
+            Use code <span className="font-bold text-[#702082]">VALUE99</span>
           </p>
         </div>
 
-        <div className="text-xl">🍕</div>
+        <div className="text-xl">🌮</div>
 
       </div>
 
@@ -1736,23 +1739,23 @@ Powered by RDEP
 
     {/* Coupon 2 */}
     <button
-      onClick={() => copyCoupon("CHEESE20")}
-      className="w-full bg-[#F4F8FB] border border-[#DDEAF2] rounded-xl p-3 text-left active:scale-[0.99]"
+      onClick={() => copyCoupon("BIGBELL")}
+      className="w-full bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl p-3 text-left active:scale-[0.99]"
     >
 
       <div className="flex items-center justify-between">
 
         <div>
           <h4 className="text-sm font-semibold text-gray-900">
-            20% Off Cheese Burst Pizza
+            Big Bell Box Combo Offer
           </h4>
 
           <p className="text-[11px] text-gray-500">
-            Use code <span className="font-bold text-[#E31837]">CHEESE20</span>
+            Use code <span className="font-bold text-[#702082]">BIGBELL</span>
           </p>
         </div>
 
-        <div className="text-xl">🧀</div>
+        <div className="text-xl">🍱</div>
 
       </div>
 
@@ -1761,23 +1764,23 @@ Powered by RDEP
 
     {/* Coupon 3 */}
     <button
-      onClick={() => copyCoupon("FREEGB")}
-      className="w-full bg-[#F4F8FB] border border-[#DDEAF2] rounded-xl p-3 text-left active:scale-[0.99]"
+      onClick={() => copyCoupon("MEALDEAL")}
+      className="w-full bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl p-3 text-left active:scale-[0.99]"
     >
 
       <div className="flex items-center justify-between">
 
         <div>
           <h4 className="text-sm font-semibold text-gray-900">
-            Free Garlic Bread
+            Big Saving Combo Meals
           </h4>
 
           <p className="text-[11px] text-gray-500">
-            Use code <span className="font-bold text-[#E31837]">FREEGB</span>
+            Use code <span className="font-bold text-[#702082]">MEALDEAL</span>
           </p>
         </div>
 
-        <div className="text-xl">🥖</div>
+        <div className="text-xl">🥙</div>
 
       </div>
 
@@ -1788,12 +1791,12 @@ Powered by RDEP
 
   {/* CTA */}
   <a
-    href="https://www.dominos.co.in/"
+    href="https://www.tacobell.co.in/"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <button className="w-full mt-4 bg-[#006491] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]">
-      Order Domino's
+    <button className="w-full mt-4 bg-[#702082] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]">
+      Order Taco Bell
     </button>
   </a>
 
@@ -1803,7 +1806,7 @@ Powered by RDEP
   </p>
 
 </div>
-
+          
          {/* Receipt Actions */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
@@ -1813,9 +1816,9 @@ Powered by RDEP
     <button
       ref={historyButtonRef}
       onClick={handleTransactionHistoryOpen}
-      className="flex flex-col items-center justify-center bg-gray-50 border border-gray-200 rounded-xl py-3 active:scale-[0.98]"
+      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
     >
-      <History className="h-5 w-5 text-[#006491] mb-1" />
+      <History className="h-5 w-5 text-[#702082] mb-1" />
       <span className="text-[11px] font-medium text-gray-700">
         Orders
       </span>
@@ -1825,9 +1828,9 @@ Powered by RDEP
     {/* Email Receipt */}
     <button
       onClick={handleEmailReceipt}
-      className="flex flex-col items-center justify-center bg-gray-50 border border-gray-200 rounded-xl py-3 active:scale-[0.98]"
+      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
     >
-      <Mail className="h-5 w-5 text-[#006491] mb-1" />
+      <Mail className="h-5 w-5 text-[#702082] mb-1" />
       <span className="text-[11px] font-medium text-gray-700">
         Email
       </span>
@@ -1837,9 +1840,9 @@ Powered by RDEP
     {/* Download Receipt */}
     <button
       onClick={handleDownloadReceipt}
-      className="flex flex-col items-center justify-center bg-gray-50 border border-gray-200 rounded-xl py-3 active:scale-[0.98]"
+      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
     >
-      <Download className="h-5 w-5 text-[#006491] mb-1" />
+      <Download className="h-5 w-5 text-[#702082] mb-1" />
       <span className="text-[11px] font-medium text-gray-700">
         Download
       </span>
@@ -1855,12 +1858,12 @@ Powered by RDEP
   {/* Header */}
   <div className="flex items-center mb-3">
 
-    <div className="bg-[#E31837] p-2 rounded-lg mr-3">
+    <div className="bg-[#702082] p-2 rounded-lg mr-3">
       <Send className="h-4 w-4 text-white" />
     </div>
 
     <h3 className="text-sm font-semibold text-gray-900">
-      Domino's Support
+      Taco Bell Support
     </h3>
 
   </div>
@@ -1871,9 +1874,9 @@ Powered by RDEP
     {/* Chat */}
     <button
       onClick={handleWhatsApp}
-      className="flex flex-col items-center justify-center bg-gray-50 border border-gray-200 rounded-xl py-3 active:scale-[0.98]"
+      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
     >
-      <MessageSquare className="h-5 w-5 text-[#006491] mb-1" />
+      <MessageSquare className="h-5 w-5 text-[#702082] mb-1" />
       <span className="text-[11px] font-medium text-gray-700">
         Chat
       </span>
@@ -1883,9 +1886,9 @@ Powered by RDEP
     {/* Call */}
     <button
       onClick={handleCall}
-      className="flex flex-col items-center justify-center bg-gray-50 border border-gray-200 rounded-xl py-3 active:scale-[0.98]"
+      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
     >
-      <Phone className="h-5 w-5 text-[#006491] mb-1" />
+      <Phone className="h-5 w-5 text-[#702082] mb-1" />
       <span className="text-[11px] font-medium text-gray-700">
         Call
       </span>
@@ -1895,9 +1898,9 @@ Powered by RDEP
     {/* Email */}
     <button
       onClick={handleEmail}
-      className="flex flex-col items-center justify-center bg-gray-50 border border-gray-200 rounded-xl py-3 active:scale-[0.98]"
+      className="flex flex-col items-center justify-center bg-[#F7F2FA] border border-[#E8DDF2] rounded-xl py-3 active:scale-[0.98]"
     >
-      <Mail className="h-5 w-5 text-[#006491] mb-1" />
+      <Mail className="h-5 w-5 text-[#702082] mb-1" />
       <span className="text-[11px] font-medium text-gray-700">
         Email
       </span>
@@ -1906,14 +1909,14 @@ Powered by RDEP
   </div>
 
 </div>
-
+          
       {/* Social Media & Store Details */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
   {/* Header */}
   <div className="flex items-center mb-4">
 
-    <div className="bg-[#E31837] p-2 rounded-lg mr-3">
+    <div className="bg-[#702082] p-2 rounded-lg mr-3">
       <Share2 className="h-4 w-4 text-white" />
     </div>
 
@@ -1929,7 +1932,7 @@ Powered by RDEP
 
     {/* Instagram */}
     <button
-      onClick={() => handleSocialLink("https://www.instagram.com/dominos_india")}
+      onClick={() => handleSocialLink("https://www.instagram.com/tacobellindia")}
       className="flex flex-col items-center"
     >
       <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center mb-1">
@@ -1941,7 +1944,7 @@ Powered by RDEP
 
     {/* Facebook */}
     <button
-      onClick={() => handleSocialLink("https://www.facebook.com/DominosPizzaIndia")}
+      onClick={() => handleSocialLink("https://www.facebook.com/TacoBellIndia")}
       className="flex flex-col items-center"
     >
       <div className="w-9 h-9 rounded-full bg-[#1877F2] flex items-center justify-center mb-1">
@@ -1953,10 +1956,10 @@ Powered by RDEP
 
     {/* Website */}
     <button
-      onClick={() => handleSocialLink("https://www.dominos.co.in")}
+      onClick={() => handleSocialLink("https://www.tacobell.co.in")}
       className="flex flex-col items-center"
     >
-      <div className="w-9 h-9 rounded-full bg-[#E31837] flex items-center justify-center mb-1">
+      <div className="w-9 h-9 rounded-full bg-[#702082] flex items-center justify-center mb-1">
         <ExternalLink className="h-4 w-4 text-white" />
       </div>
       <span className="text-[11px] font-medium text-gray-700">Website</span>
@@ -1966,41 +1969,49 @@ Powered by RDEP
 
 
   {/* Store Location */}
-  <div className="text-xs text-gray-600 text-center mb-3 bg-gray-50 p-3 rounded-xl">
+<div className="text-xs text-gray-600 text-center mb-3 bg-gray-50 p-3 rounded-xl">
 
-    <button
-      onClick={() => setShowStoreLocation(!showStoreLocation)}
-      className="w-full flex items-center justify-center mb-2 hover:text-[#E31837] transition-colors"
-    >
-      <MapPin className="h-3 w-3 mr-1 text-[#E31837]" />
-      <span className="font-semibold text-[#006491]">
-        Domino's Brigade Road, Bengaluru {showStoreLocation ? "▲" : "▼"}
-      </span>
-    </button>
+  <button
+    onClick={() => setShowStoreLocation(!showStoreLocation)}
+    className="w-full flex items-center justify-center mb-2 hover:text-[#702082] transition-colors"
+  >
+    <MapPin className="h-3 w-3 mr-1 text-[#702082]" />
+    <span className="font-semibold text-[#702082]">
+      Taco Bell SJR Koramangala, Bengaluru {showStoreLocation ? "▲" : "▼"}
+    </span>
+  </button>
 
-    {showStoreLocation && (
-      <div className="space-y-0.5">
-        <p className="font-semibold text-gray-900">Domino's Pizza</p>
-        <p>Brigade Road</p>
-        <p>Bengaluru, Karnataka 560001</p>
-        <p>India</p>
+  {showStoreLocation && (
+    <div className="space-y-0.5">
 
-        <p className="mt-2 text-[10px]">
-          GSTIN: 29ABCDE1234F1Z5
-        </p>
+      <p className="font-semibold text-gray-900">
+        Taco Bell – SJR Koramangala
+      </p>
 
-        <p className="mt-1 text-[#006491] font-semibold">
-          Store Manager: {currentReceipt.associate}
-        </p>
-      </div>
-    )}
+      <p>Sony World Junction Plot 36</p>
 
-  </div>
+      <p>100 Feet Rd, Koramangala</p>
 
+      <p>Bengaluru, Karnataka 560095</p>
+
+      <p>India</p>
+
+      <p className="mt-2 text-[10px]">
+        GSTIN: 29ABCDE1234F1Z5
+      </p>
+
+      <p className="mt-1 text-[#702082] font-semibold">
+        Store Manager: {currentReceipt.associate}
+      </p>
+
+    </div>
+  )}
+
+</div>
 
   {/* Terms */}
   <button
-    className="w-full text-xs text-gray-500 hover:text-[#E31837] h-6 font-medium"
+    className="w-full text-xs text-gray-500 hover:text-[#702082] h-6 font-medium"
     onClick={() => setShowTerms(!showTerms)}
   >
     Terms & Conditions {showTerms ? "▲" : "▼"}
@@ -2009,10 +2020,10 @@ Powered by RDEP
   {showTerms && (
     <div className="text-[11px] text-gray-500 mt-2 space-y-1 px-2 font-medium">
 
-      <p>• Domino's offers and coupons are subject to availability and store participation.</p>
-      <p>• Offers may vary by location and delivery zone.</p>
+      <p>• Taco Bell offers and coupons are subject to availability.</p>
+      <p>• Offers may vary by store location.</p>
       <p>• Prices include applicable GST.</p>
-      <p>• For support visit www.dominos.co.in/support.</p>
+      <p>• For support visit www.tacobell.co.in.</p>
 
     </div>
   )}
@@ -2153,7 +2164,7 @@ Powered by RDEP
 
         <div className="flex items-center">
 
-          <div className="bg-[#E31837] p-2 rounded-lg mr-3">
+          <div className="bg-[#702082] p-2 rounded-lg mr-3">
             <History className="h-4 w-4 text-white" />
           </div>
 
@@ -2191,17 +2202,17 @@ Powered by RDEP
               setShowTransactionHistory(false)
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}
-            className="w-full flex items-center p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#E31837] transition"
+            className="w-full flex items-center p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#702082] transition"
           >
 
             <div className="bg-white border border-gray-200 p-2 rounded-lg mr-3">
-              <FileText className="h-4 w-4 text-[#006491]" />
+              <FileText className="h-4 w-4 text-[#702082]" />
             </div>
 
             <div className="flex-grow text-left">
 
               <div className="text-sm font-semibold text-gray-900">
-                Domino's
+                Taco Bell
               </div>
 
               <div className="text-[11px] text-gray-500">
@@ -2210,7 +2221,7 @@ Powered by RDEP
 
             </div>
 
-            <div className="text-sm font-semibold text-[#006491]">
+            <div className="text-sm font-semibold text-[#702082]">
               ₹{transaction.amount.toFixed(2)}
             </div>
 
@@ -2224,6 +2235,7 @@ Powered by RDEP
 
   </div>
 )}
+        
         {/* Refer & Earn Modal */}
         {showReferModal && (
           <div
