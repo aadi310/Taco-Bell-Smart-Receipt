@@ -1111,48 +1111,46 @@ Powered by RDEP
 
 </div>
           
-      {/* Rewards Loyalty Section */}
+     {/* Big Bell Rewards */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
 
-  {/* Banner */}
-  <div className="relative">
-    <img
-      src="https://www.dominos.co.in/blog/wp-content/uploads/2022/07/dominos-cheesy-rewards-loyalty-program.jpg"
-      alt="Domino's Rewards"
-      className="w-full h-36 object-cover"
-    />
-
-    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-
-    <div className="absolute bottom-4 left-4 right-4 text-white">
-      <div className="text-lg font-semibold leading-tight">
-        Domino's Rewards
-      </div>
-
-      <div className="text-xs opacity-90">
-        Earn slices with every order and unlock free pizza
-      </div>
-    </div>
-  </div>
-
-
   <div className="p-4">
+
+    {/* Header */}
+    <div className="flex items-center justify-between mb-4">
+
+      <div>
+        <div className="text-lg font-semibold text-[#702082]">
+          Big Bell Rewards
+        </div>
+
+        <div className="text-xs text-gray-600">
+          Earn Bells on every Taco Bell order
+        </div>
+      </div>
+
+      <div className="text-xs border border-[#702082] text-[#702082] px-2 py-1 rounded-full">
+        Loyalty
+      </div>
+
+    </div>
+
 
     {/* Overview */}
     <div className="grid grid-cols-3 gap-3 mb-4">
 
-      <div className="bg-[#F4F8FB] rounded-xl p-3 text-center border border-[#DDEAF2]">
-        <div className="text-lg font-semibold text-[#006491]">+2</div>
-        <div className="text-xs text-gray-600">Slices Earned</div>
+      <div className="bg-[#F7F2FA] rounded-xl p-3 text-center border border-[#E8DDF2]">
+        <div className="text-lg font-semibold text-[#702082]">+1000</div>
+        <div className="text-xs text-gray-600">Bells Earned</div>
       </div>
 
-      <div className="bg-[#F4F8FB] rounded-xl p-3 text-center border border-[#DDEAF2]">
-        <div className="text-lg font-semibold text-[#006491]">6</div>
-        <div className="text-xs text-gray-600">Total Slices</div>
+      <div className="bg-[#F7F2FA] rounded-xl p-3 text-center border border-[#E8DDF2]">
+        <div className="text-lg font-semibold text-[#702082]">4200</div>
+        <div className="text-xs text-gray-600">Total Bells</div>
       </div>
 
-      <div className="bg-[#F4F8FB] rounded-xl p-3 text-center border border-[#DDEAF2]">
-        <div className="text-lg font-semibold text-[#006491]">Free Pizza</div>
+      <div className="bg-[#F7F2FA] rounded-xl p-3 text-center border border-[#E8DDF2]">
+        <div className="text-lg font-semibold text-[#702082]">Rice Bowl</div>
         <div className="text-xs text-gray-600">Next Reward</div>
       </div>
 
@@ -1160,22 +1158,22 @@ Powered by RDEP
 
 
     {/* Progress */}
-    <div className="bg-[#F4F8FB] rounded-xl p-4 border border-[#DDEAF2]">
+    <div className="bg-[#F7F2FA] rounded-xl p-4 border border-[#E8DDF2]">
 
       <div className="flex justify-between text-xs text-gray-600 mb-2">
         <span>Reward Progress</span>
-        <span>6 / 10 slices</span>
+        <span>4200 / 6000 Bells</span>
       </div>
 
       <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="h-full bg-[#E31837] rounded-full"
-          style={{ width: "60%" }}
+          className="h-full bg-[#702082] rounded-full"
+          style={{ width: "70%" }}
         />
       </div>
 
       <div className="text-xs text-gray-600 mt-2">
-        Only <span className="font-semibold text-[#E31837]">4 slices</span> away from your free pizza reward.
+        Only <span className="font-semibold text-[#702082]">1800 Bells</span> away from your next reward.
       </div>
 
     </div>
@@ -1185,28 +1183,31 @@ Powered by RDEP
     <div className="mt-4">
 
       <div className="text-sm font-semibold text-gray-900 mb-2">
-        Your Reward Journey
+        Reward Unlocks
       </div>
 
       <div className="flex items-center justify-between text-center text-xs">
 
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full bg-[#006491] text-white flex items-center justify-center">✓</div>
-          <div className="mt-1">Garlic Bread</div>
+          <div className="w-8 h-8 rounded-full bg-[#702082] text-white flex items-center justify-center">✓</div>
+          <div className="mt-1">Taco / Wrap</div>
+          <div className="text-[10px] text-gray-500">3000</div>
         </div>
 
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
 
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full bg-[#006491] text-white flex items-center justify-center">✓</div>
-          <div className="mt-1">Choco Lava</div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">🍚</div>
+          <div className="mt-1">Rice Bowl</div>
+          <div className="text-[10px] text-gray-500">6000</div>
         </div>
 
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
 
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#E31837] text-[#E31837] flex items-center justify-center">🍕</div>
-          <div className="mt-1">Free Pizza</div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">🌮</div>
+          <div className="mt-1">Big Bell Box</div>
+          <div className="text-[10px] text-gray-500">9000</div>
         </div>
 
       </div>
@@ -1214,15 +1215,22 @@ Powered by RDEP
     </div>
 
 
+    {/* Info */}
+    <div className="mt-4 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
+      Earn <span className="font-semibold">1000 Bells</span> on orders above ₹350.
+      Bells unlock rewards and expire after 6 months.
+    </div>
+
+
     {/* CTA */}
     <div className="mt-4">
       <a
-        href="https://pizzaonline.dominos.co.in"
+        href="https://www.tacobell.co.in"
         target="_blank"
         rel="noopener noreferrer"
-        className="block w-full text-center bg-[#006491] text-white rounded-xl py-2 text-sm font-medium hover:opacity-90 transition"
+        className="block w-full text-center bg-[#702082] text-white rounded-xl py-2 text-sm font-medium hover:opacity-90 transition"
       >
-        View Domino's Rewards
+        View Big Bell Rewards
       </a>
     </div>
 
