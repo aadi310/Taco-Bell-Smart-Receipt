@@ -1247,6 +1247,7 @@ Powered by RDEP
           
 {/* Promo Banner Carousel */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden mx-3 mt-4 relative font-poppins">
+
   <Carousel
     className="w-full"
     setApi={setPromoApi}
@@ -1254,35 +1255,37 @@ Powered by RDEP
       loop: true,
     }}
   >
+
     <CarouselContent>
 
       {/* Banner 1 */}
       <CarouselItem>
-        <div className="relative w-full aspect-[2/1] bg-[#F4F8FB] flex items-center justify-center">
+        <div className="relative w-full">
 
           <a
-            href="https://www.dominos.co.in/"
+            href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full h-full relative"
+            className="block w-full"
           >
             <Image
-              src="https://api.dominos.co.in/prod-olo-api/images/Home_Paytm_20210519.jpg"
-              alt="Domino's Paytm Offer"
-              fill
-              className="object-contain"
+              src="https://www.tacobell.co.in/pub/media/wysiwyg/1st-banner.jpeg"
+              alt="Taco Bell Offer"
+              width={1200}
+              height={600}
+              className="w-full h-auto"
               priority
             />
           </a>
 
           {/* CTA */}
           <a
-            href="https://www.dominos.co.in/"
+            href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-4 right-4"
           >
-            <button className="bg-[#E31837] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
+            <button className="bg-[#702082] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
               Order Now
             </button>
           </a>
@@ -1293,30 +1296,31 @@ Powered by RDEP
 
       {/* Banner 2 */}
       <CarouselItem>
-        <div className="relative w-full aspect-[2/1] bg-[#F4F8FB] flex items-center justify-center">
+        <div className="relative w-full">
 
           <a
-            href="https://www.dominos.co.in/"
+            href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full h-full relative"
+            className="block w-full"
           >
             <Image
-              src="https://api.dominos.co.in/prod-olo-api/images/amazon_home_20210412.jpg"
-              alt="Domino's Amazon Offer"
-              fill
-              className="object-contain"
+              src="https://www.tacobell.co.in/pub/media/wysiwyg/OG-double.jpg"
+              alt="Taco Bell Double Taco"
+              width={1200}
+              height={600}
+              className="w-full h-auto"
             />
           </a>
 
           {/* CTA */}
           <a
-            href="https://www.dominos.co.in/"
+            href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-4 right-4"
           >
-            <button className="bg-[#E31837] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
+            <button className="bg-[#702082] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
               Order Now
             </button>
           </a>
@@ -1327,30 +1331,31 @@ Powered by RDEP
 
       {/* Banner 3 */}
       <CarouselItem>
-        <div className="relative w-full aspect-[2/1] bg-[#F4F8FB] flex items-center justify-center">
+        <div className="relative w-full">
 
           <a
-            href="https://www.dominos.co.in/"
+            href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full h-full relative"
+            className="block w-full"
           >
             <Image
-              src="https://api.dominos.co.in/prod-olo-api/images/Home_Freecharge_20210405.jpg"
-              alt="Domino's Freecharge Offer"
-              fill
-              className="object-contain"
+              src="https://www.tacobell.co.in/pub/media/gallery/meal-mania89.jpg"
+              alt="Taco Bell Meal Mania"
+              width={1200}
+              height={600}
+              className="w-full h-auto"
             />
           </a>
 
           {/* CTA */}
           <a
-            href="https://www.dominos.co.in/"
+            href="https://www.tacobell.co.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-4 right-4"
           >
-            <button className="bg-[#E31837] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
+            <button className="bg-[#702082] text-white text-xs font-medium px-4 py-2 rounded-lg shadow-sm">
               Order Now
             </button>
           </a>
@@ -1363,22 +1368,24 @@ Powered by RDEP
 
     {/* Pagination Dots */}
     <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10">
+
       {[0, 1, 2].map((index) => (
         <button
           key={index}
           onClick={() => promoApi?.scrollTo(index)}
           className={`h-1.5 rounded-full transition-all duration-300 ${
             currentSlide === index
-              ? "w-5 bg-[#E31837]"
+              ? "w-5 bg-[#702082]"
               : "w-1.5 bg-white/70"
           }`}
         />
       ))}
+
     </div>
 
   </Carousel>
-</div>
 
+</div>
           {/* Join Domino's Rewards Section */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
