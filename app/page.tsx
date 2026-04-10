@@ -30,6 +30,7 @@ import {
   MapPin,
   ShoppingBagIcon,
   Utensils,
+  Gift,
   Receipt as ReceiptIcon,
 } from "lucide-react"
 
@@ -1111,26 +1112,26 @@ Powered by RDEP
 
 </div>
           
-     {/* Big Bell Rewards */}
+    {/* Big Bell Rewards */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
 
   <div className="p-4">
 
     {/* Header */}
-    <div className="flex items-center justify-between mb-4">
+    <div className="flex items-start mb-4">
+
+      <div className="w-10 h-10 bg-[#702082] rounded-xl flex items-center justify-center mr-3">
+        <Bell className="h-5 w-5 text-white" />
+      </div>
 
       <div>
-        <div className="text-lg font-semibold text-[#702082]">
+        <div className="text-lg font-semibold text-gray-900">
           Big Bell Rewards
         </div>
 
         <div className="text-xs text-gray-600">
           Earn Bells on every Taco Bell order
         </div>
-      </div>
-
-      <div className="text-xs border border-[#702082] text-[#702082] px-2 py-1 rounded-full">
-        Loyalty
       </div>
 
     </div>
@@ -1189,7 +1190,9 @@ Powered by RDEP
       <div className="flex items-center justify-between text-center text-xs">
 
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full bg-[#702082] text-white flex items-center justify-center">✓</div>
+          <div className="w-8 h-8 rounded-full bg-[#702082] text-white flex items-center justify-center">
+            ✓
+          </div>
           <div className="mt-1">Taco / Wrap</div>
           <div className="text-[10px] text-gray-500">3000</div>
         </div>
@@ -1197,7 +1200,9 @@ Powered by RDEP
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
 
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">🍚</div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">
+            🍚
+          </div>
           <div className="mt-1">Rice Bowl</div>
           <div className="text-[10px] text-gray-500">6000</div>
         </div>
@@ -1205,7 +1210,9 @@ Powered by RDEP
         <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
 
         <div className="flex flex-col items-center">
-          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">🌮</div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#702082] text-[#702082] flex items-center justify-center">
+            🌮
+          </div>
           <div className="mt-1">Big Bell Box</div>
           <div className="text-[10px] text-gray-500">9000</div>
         </div>
@@ -1217,7 +1224,7 @@ Powered by RDEP
 
     {/* Info */}
     <div className="mt-4 text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-xl p-3">
-      Earn <span className="font-semibold">1000 Bells</span> on orders above ₹350.
+      Earn <span className="font-semibold">1000 Bells</span> on orders above ₹350.  
       Bells unlock rewards and expire after 6 months.
     </div>
 
