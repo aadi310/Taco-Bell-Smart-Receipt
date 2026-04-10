@@ -139,7 +139,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
   })
 }
 
-  const customerName = "Mayank"
+  const customerName = "Sagar"
 
   // Carousel refs and APIs
   const [promoApi, setPromoApi] = useState<CarouselApi>()
