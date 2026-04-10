@@ -885,12 +885,12 @@ Powered by RDEP
 
   {/* Header */}
   <div className="flex items-center justify-between mb-4">
-    <h3 className="text-lg font-semibold flex items-center text-[#006491]">
+    <h3 className="text-lg font-semibold flex items-center text-[#702082]">
       <Utensils className="mr-2 h-5 w-5" />
-      Your Order
+      Your Taco Bell Order
     </h3>
 
-    <span className="text-xs font-medium border border-[#006491] text-[#006491] px-2 py-1 rounded-full">
+    <span className="text-xs font-medium border border-[#702082] text-[#702082] px-2 py-1 rounded-full">
       {currentReceipt.items.length} items
     </span>
   </div>
@@ -903,7 +903,7 @@ Powered by RDEP
 
       <div
         key={product.id}
-        className="bg-[#F4F8FB] rounded-xl p-3 border border-[#DDEAF2]"
+        className="bg-[#F7F2FA] rounded-xl p-3 border border-[#E8DDF2]"
       >
 
         {/* Item Header */}
@@ -915,7 +915,7 @@ Powered by RDEP
           <div className="flex items-center flex-1">
 
             <ChevronRight
-              className={`h-4 w-4 mr-2 text-[#006491] transition-transform duration-200 ${
+              className={`h-4 w-4 mr-2 text-[#702082] transition-transform duration-200 ${
                 expandedProducts.includes(product.id) ? "rotate-90" : ""
               }`}
             />
@@ -939,7 +939,7 @@ Powered by RDEP
               Qty {product.quantity}
             </div>
 
-            <div className="font-semibold text-sm text-[#006491]">
+            <div className="font-semibold text-sm text-[#702082]">
               ₹{(product.price * product.quantity).toFixed(2)}
             </div>
 
@@ -951,7 +951,7 @@ Powered by RDEP
         {/* Expanded Product Info */}
         {expandedProducts.includes(product.id) && (
 
-          <div className="mt-3 pt-3 border-t border-[#DDEAF2] text-xs text-gray-600 grid grid-cols-2 gap-y-1">
+          <div className="mt-3 pt-3 border-t border-[#E8DDF2] text-xs text-gray-600 grid grid-cols-2 gap-y-1">
 
             <div>Item Code: {product.itemCode}</div>
             <div>Size: {product.size}</div>
@@ -968,11 +968,11 @@ Powered by RDEP
 
           <button
             onClick={() => toggleItemFeedback(product.id)}
-            className="text-xs text-[#E31837] font-medium"
+            className="text-xs text-[#A445B2] font-medium"
           >
             {expandedItemFeedback.includes(product.id)
               ? "Hide item feedback"
-              : "Rate this item"}
+              : "Rate this taco moment"}
           </button>
 
         </div>
@@ -996,7 +996,7 @@ Powered by RDEP
                   <Star
                     className={`h-5 w-5 ${
                       star <= (itemFeedback[product.id]?.rating || 0)
-                        ? "fill-[#E31837] text-[#E31837]"
+                        ? "fill-[#702082] text-[#702082]"
                         : "text-gray-300"
                     }`}
                   />
@@ -1023,7 +1023,7 @@ Powered by RDEP
                     onClick={() => toggleItemTag(product.id, tag)}
                     className={`text-[11px] px-2 py-1 rounded-full border ${
                       active
-                        ? "bg-[#E31837] text-white border-[#E31837]"
+                        ? "bg-[#702082] text-white border-[#702082]"
                         : "border-gray-200"
                     }`}
                   >
@@ -1062,7 +1062,7 @@ Powered by RDEP
 
     <div className="flex justify-between text-base font-semibold pt-2 border-t border-gray-200">
       <span>Total Paid</span>
-      <span className="text-[#006491]">
+      <span className="text-[#702082]">
         ₹{currentReceipt.total.toFixed(2)}
       </span>
     </div>
@@ -1077,7 +1077,7 @@ Powered by RDEP
 
       <div className="flex items-center">
 
-        <div className="w-8 h-8 bg-[#006491] rounded-lg flex items-center justify-center mr-3">
+        <div className="w-8 h-8 bg-[#702082] rounded-lg flex items-center justify-center mr-3">
           <svg
             className="w-4 h-4 text-white"
             fill="none"
@@ -1101,7 +1101,7 @@ Powered by RDEP
 
       </div>
 
-      <div className="text-sm font-semibold text-[#006491]">
+      <div className="text-sm font-semibold text-[#702082]">
         ₹{currentReceipt.total.toFixed(2)}
       </div>
 
@@ -1110,7 +1110,7 @@ Powered by RDEP
   </div>
 
 </div>
-
+          
       {/* Rewards Loyalty Section */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
 
