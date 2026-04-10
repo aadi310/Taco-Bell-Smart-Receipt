@@ -1520,7 +1520,7 @@ Powered by RDEP
       </div>
 
       <div className="text-xs text-gray-500">
-        Your input helps us improve every Domino's experience.
+        Your input helps us improve every Taco Bell experience.
       </div>
 
     </div>
@@ -1534,7 +1534,7 @@ Powered by RDEP
 
         <div className="flex items-center">
 
-          <div className="bg-[#E31837] p-2 rounded-lg mr-3">
+          <div className="bg-[#702082] p-2 rounded-lg mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -1546,7 +1546,7 @@ Powered by RDEP
           </div>
 
           <h3 className="text-base font-semibold text-gray-900">
-            Rate Your Pizza Experience
+            Rate Your Taco Bell Experience
           </h3>
 
         </div>
@@ -1554,15 +1554,15 @@ Powered by RDEP
       </div>
 
 
-      {/* Pizza Rating */}
+      {/* Taco Rating */}
       <div className="flex justify-center gap-3 py-1">
 
-        {[1,2,3,4,5].map((pizza) => (
+        {[1,2,3,4,5].map((taco) => (
 
           <button
-            key={pizza}
+            key={taco}
             onClick={() => {
-              setRating(pizza)
+              setRating(taco)
               setSelectedTags([])
             }}
             className="transition-transform active:scale-90"
@@ -1570,10 +1570,10 @@ Powered by RDEP
 
             <span
               className={`text-3xl ${
-                pizza <= rating ? "opacity-100" : "opacity-30"
+                taco <= rating ? "opacity-100" : "opacity-30"
               }`}
             >
-              🍕
+              🌮
             </span>
 
           </button>
@@ -1597,17 +1597,17 @@ Powered by RDEP
             {(rating >= 4
               ? [
                   "Great taste",
-                  "Hot & fresh pizza",
-                  "Fast delivery",
+                  "Hot & fresh",
+                  "Fast service",
                   "Good value",
                   "Well packaged",
-                  "Accurate order",
+                  "Order was accurate",
                 ]
               : [
-                  "Pizza was cold",
-                  "Long delivery time",
+                  "Food was cold",
+                  "Slow service",
                   "Wrong order",
-                  "Poor taste",
+                  "Taste could be better",
                   "Packaging issue",
                   "Not good value",
                 ]
@@ -1624,7 +1624,7 @@ Powered by RDEP
                 }
                 className={`text-[11px] px-3 py-1.5 rounded-full border transition ${
                   selectedTags.includes(item)
-                    ? "bg-[#E31837] text-white border-[#E31837]"
+                    ? "bg-[#702082] text-white border-[#702082]"
                     : "border-gray-200 bg-gray-50"
                 }`}
               >
@@ -1649,8 +1649,8 @@ Powered by RDEP
 
         <textarea
           rows={3}
-          placeholder="Tell us about your Domino's order"
-          className="w-full p-3 text-xs border border-gray-200 rounded-xl focus:ring-1 focus:ring-[#E31837] focus:border-[#E31837] outline-none resize-none"
+          placeholder="Tell us about your Taco Bell order"
+          className="w-full p-3 text-xs border border-gray-200 rounded-xl focus:ring-1 focus:ring-[#702082] focus:border-[#702082] outline-none resize-none"
           value={feedbackText}
           onChange={(e) => setFeedbackText(e.target.value)}
         />
@@ -1660,7 +1660,7 @@ Powered by RDEP
 
       {/* Submit Button */}
       <button
-        className="w-full bg-[#006491] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]"
+        className="w-full bg-[#702082] text-white h-10 text-xs font-semibold rounded-xl transition active:scale-[0.98]"
         onClick={handleFeedbackSubmit}
         disabled={!rating}
       >
@@ -1669,7 +1669,7 @@ Powered by RDEP
 
 
       <p className="text-[10px] text-center text-gray-400">
-        Your feedback helps Domino's improve every order.
+        Your feedback helps Taco Bell improve every order.
       </p>
 
     </div>
@@ -1677,7 +1677,7 @@ Powered by RDEP
   )}
 
 </div>
-
+          
 {/* Just For You - Coupon Section */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
