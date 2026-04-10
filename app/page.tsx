@@ -811,7 +811,7 @@ Powered by RDEP
       
       {/* Taco Bell Logo */}
       <img
-        src="https://www.tacobell.co.in/pub/static/frontend/Flamingo/default/en_US/images/logo-new.png"
+        src="/images/design-mode/taco-bell-logo.png"
         alt="Taco Bell"
         className="h-16 w-auto"
       />
