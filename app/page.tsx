@@ -802,17 +802,20 @@ Powered by RDEP
       >
         <div className="flex flex-col w-full gap-3 pb-4 px-3">
 
-          {/* Top Section */}
+         {/* Top Section */}
 <div className="bg-white rounded-2xl shadow-md border border-gray-200 mt-4 mx-3 overflow-hidden">
+  
   {/* Header */}
-  <div className="bg-[#006491] px-5 pt-5 pb-6 text-white">
+  <div className="bg-[#702082] px-5 pt-5 pb-6 text-white">
     <div className="flex items-start justify-between">
-      {/* Logo */}
+      
+      {/* Taco Bell Logo */}
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/74/Dominos_pizza_logo.svg"
-        alt="Domino's Pizza"
-        className="h-20 w-auto"
+        src="https://www.tacobell.co.in/pub/static/frontend/Flamingo/default/en_US/images/logo-new.png"
+        alt="Taco Bell"
+        className="h-16 w-auto"
       />
+
       {/* QR */}
       <div className="bg-white rounded-xl p-2 shadow-sm">
         <Image
@@ -823,17 +826,19 @@ Powered by RDEP
         />
       </div>
     </div>
+
     {/* Greeting */}
     <div className="mt-3">
       <div className="text-lg font-semibold">
-        Thanks {customerName}
+        Hola {customerName}
       </div>
       <div className="text-sm opacity-90">
-        Your Domino's order is confirmed
+        Your Taco Bell order is confirmed
       </div>
     </div>
+
     {/* Amount */}
-    <div className="mt-4 bg-[#E31837] rounded-xl p-4 flex justify-between items-center">
+    <div className="mt-4 bg-[#A445B2] rounded-xl p-4 flex justify-between items-center">
       <div>
         <div className="text-xs opacity-80">
           Amount Paid
@@ -845,10 +850,12 @@ Powered by RDEP
       <User2 className="h-7 w-7 text-white/80" />
     </div>
   </div>
+
   {/* Receipt Metadata */}
   <div className="p-4 bg-white">
     <div className="bg-gray-50 rounded-xl border border-gray-200 p-3 space-y-2">
-      {/* Receipt ID */}
+
+      {/* Order ID */}
       <div className="flex justify-between items-center">
         <span className="text-xs text-gray-500">
           Order ID:
@@ -857,6 +864,7 @@ Powered by RDEP
           {currentReceipt.id}
         </span>
       </div>
+
       {/* Date & Time */}
       <div className="flex justify-between items-center">
         <span className="text-xs text-gray-500">
@@ -866,8 +874,10 @@ Powered by RDEP
           {currentReceipt.date} {currentReceipt.time}
         </span>
       </div>
+
     </div>
   </div>
+
 </div>
           
           {/* Purchase Details */}
