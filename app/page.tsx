@@ -12,6 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import {
   ChevronRight,
+  Bell, 
   Download,
   ExternalLink,
   FileText,
@@ -1386,6 +1387,7 @@ Powered by RDEP
   </Carousel>
 
 </div>
+          
           {/* Join Domino's Rewards Section */}
 <div className="bg-white rounded-2xl border border-gray-200 shadow-md mx-3 mt-4 p-4 font-poppins">
 
